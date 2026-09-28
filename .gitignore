@@ -19,3 +19,4 @@ CSAF/
 /triage*.md
 /*.vex.json
 /reports/
+.vscode/
