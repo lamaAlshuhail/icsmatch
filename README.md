@@ -36,13 +36,13 @@ asset inventory (CSV)  x  CISA CSAF corpus  ->  prioritised triage report
 - **Honours `product_status`**, so a product the vendor lists as not affected or already fixed does not become a finding
 - **Prioritises by exploitation, not CVSS**, using CISA KEV, FIRST EPSS and Purdue-level exposure, and emits an SSVC vector per row
 - **Runs air-gapped**, SQLite on disk, `--offline` flag, cached feeds
-- **Exports** markdown for the reader, JSON for the SIEM, and OpenVEX for anything downstream
+- **Exports** markdown for the reader, structured JSON for scripts, and OpenVEX for anything downstream
 
 ## Install
 
 ```bash
-pip install icsmatch                 # core, stdlib only
-pip install "icsmatch[fuzzy,yaml]"   # rapidfuzz acceleration + YAML alias tables
+pip install "git+https://github.com/lamaAlshuhail/icsmatch"                 # core, stdlib only
+pip install "icsmatch[fuzzy,yaml] @ git+https://github.com/lamaAlshuhail/icsmatch"   # with rapidfuzz and YAML
 ```
 
 ## Quickstart
@@ -153,8 +153,7 @@ Point it at a directory of inventories and it renders one report per inventory p
 
 ```
 $ icsmatch report --all-clients ./inventories --outdir reports
-  refinery-north             10 assets   102 findings  -> reports/refinery-north.md
-  water-utility               6 assets    68 findings  -> reports/water-utility.md
+  water-utility               6 assets    67 findings  -> reports/water-utility.md
   petrochem-east              3 assets    31 findings  -> reports/petrochem-east.md
 
 portfolio summary -> reports/portfolio.md
@@ -211,7 +210,7 @@ SSVCv2/E:N/X:S/U:E/H:V/D:S
 
 **What that vector is and is not.** Exploitation, exposure and utility are populated from real signals. Human impact is a default derived from CVSS and Purdue level, because nobody at the tool's end has assessed safety or mission consequence for your site, and SSVC defines that decision point as exactly that assessment. Treat `H:` as a placeholder to override, not a finding. The vector is emitted so an analyst can see which branch fired and disagree with it.
 
-Dragos's 2026 ICS/OT year in review found only about 2% of ICS-relevant vulnerabilities warranted immediate action, that about 25% of ICS-CERT and NVD entries carried an incorrect CVSS score in 2025, and that about 26% of advisories shipped with no patch or mitigation. Severity alone is a poor sort key; confirmed exploitation is a much better one.
+Dragos's 2026 year in review press release (17 February 2026) reports that only 2% of ICS-relevant vulnerabilities warranted immediate action, that 25% of ICS-CERT and NVD entries carried an incorrect CVSS score in 2025, and that 26% of advisories shipped with no patch or mitigation. Dragos's own blog gives slightly different figures (3% immediate, 25% no patch), so treat these as approximate. Severity alone is a poor sort key; confirmed exploitation is a much better one.
 
 FIRST is explicit that no universal EPSS threshold exists, so the 10% cutoff is a documented default, not a law. Change it if your risk appetite differs.
 
@@ -301,7 +300,7 @@ icsmatch stats     --by-year          identifier coverage broken out by year
 icsmatch coverage  --source PATH      version-range parser coverage report
 ```
 
-Useful flags: `--max-tier N` (drop weak matches), `--priority NOW NEXT`, `--json` (SIEM ingest), `--offline` (cached KEV and EPSS only).
+Useful flags: `--max-tier N` (drop weak matches), `--priority NOW NEXT`, `--json` (structured output), `--offline` (cached KEV and EPSS only).
 
 ## Design notes
 
