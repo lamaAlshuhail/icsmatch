@@ -1,0 +1,140 @@
+asset_id,advisory_id,label,advisory_product
+DCS-300,ICSA-21-194-02,affected,Modicon M580 CPU (part numbers BMEP* and BMEH*)
+DCS-300,ICSA-23-201-01,affected,Modicon M580 CPU (part numbers BMEP* and BMEH*)
+DCS-300,ICSA-23-227-01,affected,Modicon M580 CPU
+DCS-300,ICSA-24-331-03,affected,Modicon M580 CPU (part numbers BMEP* and BMEH* excluding M580 CPU Safe
+DCS-300,ICSA-25-035-04,affected,"Modicon M580 CPU (part numbers BMEP* and BMEH*, excluding M580 CPU Saf"
+DCS-300,ICSA-25-114-01,affected,Modicon M580 Firmware
+HIST-400,ICSA-11-243-02,affected,Proficy Historian
+HIST-400,ICSA-12-131-02,affected,Proficy Historian
+HIST-400,ICSA-23-017-01,affected,Proficy Historian
+HMI-010,ICSA-15-099-01E,affected,SIMATIC HMI Comfort Panels V12
+HMI-010,ICSA-19-099-03,affected,"SIMATIC HMI Comfort Panels 4"" - 22"" (incl. SIPLUS variants)"
+HMI-010,ICSA-19-099-06,affected,"SIMATIC HMI Comfort Panels 4"" - 22"" (incl. SIPLUS variants)"
+HMI-010,ICSA-19-134-09,affected,"SIMATIC HMI Comfort Panels 4"" - 22"" (incl. SIPLUS variants)"
+HMI-010,ICSA-19-283-02,affected,SIMATIC HMI Comfort Panels (incl. SIPLUS variants)
+HMI-010,ICSA-20-196-04,affected,SIMATIC HMI Comfort Panels (incl.'SIPLUS variants)
+HMI-010,ICSA-20-252-06,affected,SIMATIC HMI Comfort Panels (incl. SIPLUS variants)
+HMI-010,ICSA-20-343-08,affected,"SIMATIC HMI Comfort Panels 4"" - 22"" (incl. SIPLUS variants)"
+HMI-010,ICSA-21-033-02,affected,SIMATIC HMI Comfort Panels (incl.'SIPLUS variants)
+HMI-010,ICSA-21-131-11,affected,"SIMATIC HMI Comfort Panels 4"" - 22"" (incl. SIPLUS variants)"
+HMI-010,ICSA-21-131-12,affected,"SIMATIC HMI Comfort Panels V15 4"" - 22"" (incl. SIPLUS variants)"
+HMI-010,ICSA-21-194-07,not_affected,SIMATIC HMI Unified Comfort Panels
+HMI-010,ICSA-22-104-05,affected,SIMATIC HMI Comfort Panels (incl. SIPLUS variants)
+HMI-010,ICSA-22-132-08,affected,SIMATIC HMI Comfort Panels (incl. SIPLUS variants)
+HMI-010,ICSA-22-167-14,not_affected,SIMATIC HMI Unified Comfort Panels family
+HMI-010,ICSA-22-286-14,affected,SIMATIC HMI Comfort Panels (incl. SIPLUS variants)
+HMI-010,ICSA-24-256-09,affected,SIMATIC HMI Comfort Panels (incl. SIPLUS variants)
+HMI-010,ICSA-26-174-03,affected,SIMATIC HMI Comfort Panels
+PLC-001,ICSA-14-114-02,affected,SIMATIC S7-1200 CPU family
+PLC-001,ICSA-15-064-04,not_affected,SIMATIC S7-300 CPU family
+PLC-001,ICSA-17-129-02,not_affected,SIMATIC S7-410 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-17-339-01,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-18-079-02,not_affected,SIMATIC S7-410 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-18-226-02,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-18-317-02,not_affected,SIMATIC S7-410 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-18-317-05,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-19-099-03,not_affected,SIMATIC S7-1500 Software Controller
+PLC-001,ICSA-19-134-09,not_affected,SIMATIC S7-1500 Software Controller
+PLC-001,ICSA-19-283-02,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-19-318-02,affected,SIMATIC S7-1200 CPU family V4.x (incl.'SIPLUS variants)
+PLC-001,ICSA-19-344-06,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-20-042-11,not_affected,SIMATIC S7-1500 Software Controller
+PLC-001,ICSA-20-105-08,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-20-161-04,not_affected,SIMATIC S7-1500 Software Controller
+PLC-001,ICSA-20-252-02,not_affected,SIMATIC S7-300 CPU family (incl. related ET200 CPUs and SIPLUS variant
+PLC-001,ICSA-20-315-04,not_affected,SIMATIC S7-300 CPU family (incl. related ET200 CPUs and SIPLUS variant
+PLC-001,ICSA-21-152-01,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-21-194-03,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-21-257-23,not_affected,SIMATIC S7-1500 Software Controller
+PLC-001,ICSA-22-041-01,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-22-104-05,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-22-104-06,not_affected,SIMATIC S7-410 V10 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-22-104-12,not_affected,SIMATIC S7-410 V10 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-22-167-14,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-22-286-04,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-22-314-02,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-22-349-03,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-23-222-07,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-23-222-09,affected,SIMATIC S7-1200 CPU family (incl. SIPLUS variants)
+PLC-001,ICSA-23-348-09,not_affected,SIMATIC S7-1500 Software Controller
+PLC-001,ICSA-24-284-01,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-25-021-02,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-25-044-01,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-25-044-02,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-25-105-03,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-25-226-22,not_affected,SIMATIC PCS 7 V10.0
+PLC-001,ICSA-25-259-05,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-25-352-05,affected,SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)
+PLC-001,ICSA-26-134-06,not_affected,SIMATIC S7-410 V10 CPU family (incl. SIPLUS variants)
+PLC-002,ICSA-14-079-01,affected,SIMATIC S7-1200 PLC family
+PLC-002,ICSA-14-079-02,affected,SIMATIC S7-1200 CPU family
+PLC-002,ICSA-14-114-02,affected,SIMATIC S7-1200 CPU family
+PLC-002,ICSA-15-022-01,affected,SIMATIC S7-1200 CPU family
+PLC-002,ICSA-15-239-02,affected,SIMATIC S7-1200 CPU family
+PLC-002,ICSA-16-075-01,affected,SIMATIC S7-1200 CPU family
+PLC-002,ICSA-19-099-03,not_affected,SIMATIC S7-1500 Software Controller
+PLC-002,ICSA-19-134-09,not_affected,SIMATIC S7-1500 Software Controller
+PLC-002,ICSA-19-344-06,affected,SIMATIC S7-1500 CPU family (incl. related ET200 CPUs and SIPLUS varian
+PLC-002,ICSA-20-042-11,not_affected,SIMATIC S7-1500 Software Controller
+PLC-002,ICSA-20-161-04,not_affected,SIMATIC S7-1500 Software Controller
+PLC-002,ICSA-21-152-01,affected,SIMATIC S7-1500 CPU family (incl. related ET200 CPUs and SIPLUS varian
+PLC-002,ICSA-21-257-23,affected,SIMATIC S7-1500 CPU family (incl. related ET200 CPUs and SIPLUS varian
+PLC-002,ICSA-22-041-01,affected,SIMATIC S7-1500 CPU family (incl. related ET200 CPUs and SIPLUS varian
+PLC-002,ICSA-22-167-14,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-002,ICSA-22-286-04,affected,SIMATIC S7-1500 CPU family (incl. related ET200 CPUs and SIPLUS varian
+PLC-002,ICSA-22-314-02,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-002,ICSA-22-349-03,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-002,ICSA-23-222-07,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-002,ICSA-23-222-09,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-002,ICSA-23-257-01,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-002,ICSA-23-348-09,not_affected,SIMATIC S7-1500 Software Controller
+PLC-002,ICSA-25-226-22,not_affected,SIMATIC S7-1500 Software Controller V2
+PLC-100,ICSA-17-094-05,affected,ControlLogix 5580 controllers
+PLC-100,ICSA-21-061-02,not_affected,ControlLogix 5570 controllers
+PLC-100,ICSA-22-090-05,affected,ControlLogix 5580 controllers
+PLC-100,ICSA-22-144-01,affected,ControlLogix 5580 controllers
+PLC-100,ICSA-22-342-03,affected,ControlLogix 5580 controllers
+PLC-100,ICSA-23-026-06,affected,ControlLogix 5580 controllers
+PLC-100,ICSA-24-030-05,not_affected,ControlLogix 5570
+PLC-100,ICSA-24-226-09,affected,ControlLogix 5580 (1756 - L8z)
+PLC-100,ICSA-24-226-10,affected,ControlLogix 5580 (1756 - L8z)
+PLC-100,ICSA-24-256-18,affected,ControlLogix 5580
+PLC-100,ICSA-24-284-20,affected,ControlLogix 5580
+PLC-100,ICSA-26-167-03,not_affected,ControlLogix 5570
+PLC-100,ICSA-26-197-06,affected,ControlLogix 5580
+PLC-100,ICSA-26-244-03,affected,ControlLogix 5580
+PLC-100,ICSA-26-244-05,affected,ControlLogix 5580
+PLC-101,ICSA-12-342-01B,affected,MicroLogix 1400 controller
+PLC-101,ICSA-13-011-03,affected,MicroLogix 1400
+PLC-101,ICSA-18-310-02,affected,MicroLogix 1400 Controllers Series A
+PLC-101,ICSA-19-113-01,affected,MicroLogix 1400 Controllers Series A
+PLC-101,ICSA-20-070-06,not_affected,MicroLogix 1100 Controller
+PLC-101,ICSA-21-033-01,affected,MicroLogix 1400 All series
+PLC-101,ICSA-21-145-02,affected,MicroLogix 1400
+PLC-101,ICSA-21-189-01,not_affected,MicroLogix 1100
+PLC-101,ICSA-22-188-01,affected,MicroLogix 1400
+PLC-101,ICSA-22-354-04,affected,MicroLogix 1400 B/C
+RTU-200,ICSA-23-005-02,affected,FOXMAN-UN
+RTU-200,ICSA-23-178-01,affected,FOXMAN-UN
+RTU-200,ICSA-25-014-01,affected,FOXMAN-UN
+RTU-200,ICSA-25-016-06,affected,FOXMAN-UN
+RTU-201,ICSA-25-128-02,affected,RTU500 series Product
+SW-021,ICSA-12-102-04,not_affected,Scalance X308-2M
+SW-021,ICSA-16-103-03C,affected,SCALANCE X200 family
+SW-021,ICSA-17-129-02,affected,SCALANCE X-200 family (incl. SIPLUS NET variants)
+SW-021,ICSA-19-085-01,affected,SCALANCE X208
+SW-021,ICSA-21-103-07,affected,SCALANCE X208 (incl. SIPLUS NET variant)
+PLC-001-PATCHED,ICSA-21-194-03,not_affected,"SIMATIC S7-1200 <4.5.0, asset 9.9.9"
+PLC-001-PATCHED,ICSA-22-167-14,not_affected,"SIMATIC S7-1200 <4.6.0, asset 9.9.9"
+PLC-001-PATCHED,ICSA-25-044-01,not_affected,"SIMATIC S7-1200 <V4.7, asset 9.9.9"
+PLC-001-PATCHED,ICSA-25-259-05,not_affected,"SIMATIC S7-1200 <4.5.2, asset 9.9.9"
+PLC-001-PATCHED,ICSA-25-021-02,not_affected,"SIMATIC S7-1200 <V4.7, asset 9.9.9"
+PLC-001-PATCHED,ICSA-25-044-02,not_affected,"SIMATIC S7-1200 <V4.7, asset 9.9.9"
+PLC-001-PATCHED,ICSA-24-284-01,not_affected,"SIMATIC S7-1200 <4.7.0, asset 9.9.9"
+PLC-001-PATCHED,ICSA-19-344-06,affected,"SIMATIC S7-1200 >=4.4.0, asset 9.9.9"
+PLC-MICRO,ICSA-20-070-06,not_affected,MicroLogix 1100 Controller
+PLC-MICRO,ICSA-21-189-01,not_affected,MicroLogix 1100
+PLC-MICRO,ICSA-13-011-03,affected,MicroLogix 1400
+PLC-MICRO,ICSA-22-188-01,affected,MicroLogix 1400
+PLC-MICRO,ICSA-21-145-02,affected,MicroLogix 1400

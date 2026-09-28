@@ -1,0 +1,66 @@
+# Vendor alias table.
+#
+# Extend this file rather than editing code. The key is the canonical form;
+# the list holds every spelling seen in advisories or asset inventories.
+#
+# Contributions welcome: if your inventory uses a vendor spelling that
+# icsmatch does not recognise, add it here and open a PR.
+
+vendor_aliases:
+  siemens:
+    - Siemens AG
+    - Siemens Energy
+    - Siemens Healthineers
+    - Siemens Mobility
+    - Siemens Digital Industries
+  schneider:
+    - Schneider Electric
+    - Schneider-Electric
+    - Modicon
+    - APC by Schneider Electric
+    - Telemecanique
+  rockwell:
+    - Rockwell Automation
+    - Allen-Bradley
+    - Allen Bradley
+    - AB
+  hitachienergy:
+    - Hitachi Energy
+    - Hitachi ABB Power Grids
+    - ABB Power Grids
+  abb:
+    - ABB Ltd
+    - ABB Inc
+  honeywell:
+    - Honeywell International
+    - Honeywell Process Solutions
+    - Honeywell Building Technologies
+  emerson:
+    - Emerson Electric
+    - Emerson Process Management
+    - Fisher
+    - Fisher-Rosemount
+  yokogawa:
+    - Yokogawa Electric
+    - Yokogawa Electric Corporation
+  mitsubishi:
+    - Mitsubishi Electric
+    - Mitsubishi Electric Corporation
+  ge:
+    - General Electric
+    - GE Digital
+    - GE Grid Solutions
+    - GE Healthcare
+    - GE Vernova
+  omron:
+    - OMRON Corporation
+  phoenixcontact:
+    - Phoenix Contact
+  wago:
+    - WAGO Kontakttechnik
+  moxa:
+    - Moxa Inc
+  advantech:
+    - Advantech Co
+  delta:
+    - Delta Electronics

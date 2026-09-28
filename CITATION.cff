@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or the measurement it reports, please cite it as below."
+type: software
+title: "icsmatch: matching ICS/OT security advisories to asset inventories without CPE"
+authors:
+  - family-names: Alshuhail
+    given-names: Lama
+version: 0.1.0
+date-released: "2026-09-19"
+license: MIT
+repository-code: "https://github.com/lamaAlshuhail/icsmatch"
+keywords:
+  - CSAF
+  - ICS
+  - OT security
+  - vulnerability management
+  - CPE
+  - VEX
+abstract: >-
+  A command-line tool that matches CISA CSAF 2.0 advisories against an OT asset
+  inventory. Accompanies a measurement of product identifier coverage across the
+  CISA ICS corpus (4,021 advisories, 27,664 products, cisagov/CSAF commit 6f2e04f,
+  19 September 2026): 0.10% of products carry a CPE while 29.43% carry a model or
+  order number.

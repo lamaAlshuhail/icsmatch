@@ -1,0 +1,85 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - run: ruff check src tests
+      - run: mypy src
+      - run: pytest -q
+
+  stdlib-only:
+    # the core must run with no optional extras: no rapidfuzz, no PyYAML, no numpy.
+    # both runtime failures found on a clean install were invisible to a dev-extras job.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - run: pip install pytest
+      - run: python -c "import rapidfuzz" && exit 1 || echo "rapidfuzz absent, as intended"
+      - run: python -c "import yaml" && exit 1 || echo "PyYAML absent, as intended"
+      - run: pytest -q
+
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - name: fetch a slice of the CISA CSAF corpus
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/cisagov/CSAF.git /tmp/CSAF
+          cd /tmp/CSAF && git sparse-checkout set csaf_files/OT/white/2025
+      - name: ingest and inspect
+        run: |
+          icsmatch --db /tmp/ci.db update --source /tmp/CSAF/csaf_files
+          icsmatch --db /tmp/ci.db stats --by-year
+          icsmatch --db /tmp/ci.db coverage --source /tmp/CSAF/csaf_files
+          icsmatch --db /tmp/ci.db search "S7-1200" --limit 5
+      - name: match, report, export
+        run: |
+          icsmatch --db /tmp/ci.db match  --assets examples/sample_inventory.csv --offline --json > /tmp/m.json
+          python -c "import json; json.load(open('/tmp/m.json'))"
+          icsmatch --db /tmp/ci.db report --assets examples/sample_inventory.csv --offline --out /tmp/report.md
+          test -s /tmp/report.md
+          icsmatch --db /tmp/ci.db vex    --assets examples/sample_inventory.csv --out /tmp/out.vex.json
+          python -c "import json; d=json.load(open('/tmp/out.vex.json')); assert d['@context'].startswith('https://openvex.dev')"
+      - name: several inventories and a rollup
+        run: |
+          icsmatch --db /tmp/ci.db report --all-clients examples/inventories --outdir /tmp/reports --offline
+          test -s /tmp/reports/portfolio.md
+      - name: run history and diff
+        run: |
+          icsmatch --db /tmp/ci.db report --assets examples/sample_inventory.csv --offline --out /tmp/r2.md
+          icsmatch --db /tmp/ci.db diff sample_inventory
+      - name: precision gate
+        # fails the build if a normalisation change starts inventing matches.
+        # runs before the review step, which deliberately confirms a pair.
+        run: |
+          icsmatch --db /tmp/ci.db eval --assets examples/eval_inventory.csv \
+            --labels examples/labels/sample_labels.csv --max-tier 3 --min-precision 0.95
+      - name: review loop persists decisions
+        run: |
+          printf 'y\nq\n' | icsmatch --db /tmp/ci.db review --assets examples/sample_inventory.csv --analyst ci-bot
+          icsmatch --db /tmp/ci.db aliases
+      - name: throughput
+        run: icsmatch --db /tmp/ci.db bench --assets examples/sample_inventory.csv --sizes 100 1000

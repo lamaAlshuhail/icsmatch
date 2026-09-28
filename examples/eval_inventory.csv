@@ -1,0 +1,14 @@
+asset_id,vendor,product,version,model,purdue_level,site
+PLC-001,Siemens,SIMATIC S7-1200,4.2.1,6ES7214-1AG40-0XB0,1,Plant-A
+PLC-002,Siemens,S7-1500,2.8.1,,1,Plant-A
+HMI-010,Siemens,SIMATIC HMI Comfort Panel,15.1,,2,Plant-A
+SW-021,Siemens,SCALANCE X208,4.5,,2,Plant-A
+PLC-100,Rockwell Automation,ControlLogix 5580,32.011,,1,Plant-B
+PLC-101,Allen-Bradley,MicroLogix 1400,21.003,,1,Plant-B
+RTU-200,Hitachi Energy,FOXMAN-UN,R15A,,2,Plant-B
+RTU-201,Hitachi Energy,RTU500,12.0.1,,1,Plant-B
+DCS-300,Schneider Electric,Modicon M580,3.20,,1,Plant-C
+HIST-400,GE,Proficy Historian,9.0,,3,Plant-C
+PLC-001-PATCHED,Siemens,SIMATIC S7-1200,9.9.9,6ES7214-1AG40-0XB0,1,Plant-A
+REL-SIPROTEC,Siemens,SIPROTEC 5,9.0,,2,Sub-A
+PLC-MICRO,Allen-Bradley,MicroLogix 1400,21.007,,1,Plant-B

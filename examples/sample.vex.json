@@ -1,0 +1,85 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://openvex.dev/docs/icsmatch/vex-e61f3cfb0b7d3377",
+  "author": "OT Security",
+  "timestamp": "2026-09-19T18:28:01+00:00",
+  "version": 1,
+  "tooling": "icsmatch",
+  "statements": [
+    {
+      "vulnerability": {
+        "name": "CVE-2011-3320"
+      },
+      "products": [
+        {
+          "@id": "urn:icsmatch:asset:HIST-400",
+          "identifiers": {
+            "purl": "pkg:generic/ge/proficy-historian@9.0"
+          }
+        }
+      ],
+      "status": "affected",
+      "status_notes": "ICSA-11-243-02: vendor+product match; asset version 9.0 satisfies all versions affected"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2012-1802"
+      },
+      "products": [
+        {
+          "@id": "urn:icsmatch:asset:SW-021",
+          "identifiers": {
+            "purl": "pkg:generic/siemens/scalance-x208@4.5"
+          }
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "ICSA-12-102-04: fuzzy product match 'SCALANCE X208'~'Scalance X308-2M' (ratio 0.85); all versions affected"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2012-2515"
+      },
+      "products": [
+        {
+          "@id": "urn:icsmatch:asset:HIST-400",
+          "identifiers": {
+            "purl": "pkg:generic/ge/proficy-historian@9.0"
+          }
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "ICSA-12-131-02: vendor+product match but version range '4.5|4.0|3.5|3.1' unparseable (no recognisable constraint)"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2012-2516"
+      },
+      "products": [
+        {
+          "@id": "urn:icsmatch:asset:HIST-400",
+          "identifiers": {
+            "purl": "pkg:generic/ge/proficy-historian@9.0"
+          }
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "ICSA-12-131-02: vendor+product match but version range '4.5|4.0|3.5|3.1' unparseable (no recognisable constraint)"
+    },
+    {
+      "vulnerability": {
+        "name": "CVE-2012-4690"
+      },
+      "products": [
+        {
+          "@id": "urn:icsmatch:asset:PLC-101",
+          "identifiers": {
+            "purl": "pkg:generic/allen-bradley/micrologix-1400@21.003"
+          }
+        }
+      ],
+      "status": "affected",
+      "status_notes": "ICSA-12-342-01B: vendor+product match; asset version 21.003 satisfies all versions affected"
+    }
+  ]
+}

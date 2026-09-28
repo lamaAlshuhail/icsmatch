@@ -1,0 +1,91 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "icsmatch: update (ingest corpus)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "icsmatch.cli",
+      "args": ["--db", "${workspaceFolder}/local.db",
+               "update", "--source", "${workspaceFolder}/CSAF/csaf_files"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "icsmatch: match sample inventory",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "icsmatch.cli",
+      "args": ["--db", "${workspaceFolder}/local.db",
+               "match", "--assets", "examples/sample_inventory.csv", "--offline"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "icsmatch: report",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "icsmatch.cli",
+      "args": ["--db", "${workspaceFolder}/local.db",
+               "report", "--assets", "examples/sample_inventory.csv",
+               "--out", "${workspaceFolder}/triage.md", "--offline"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "icsmatch: eval (precision/recall)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "icsmatch.cli",
+      "args": ["--db", "${workspaceFolder}/local.db",
+               "eval", "--assets", "examples/sample_inventory.csv",
+               "--labels", "examples/labels/sample_labels.csv"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "icsmatch: bench",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "icsmatch.cli",
+      "args": ["--db", "${workspaceFolder}/local.db",
+               "bench", "--assets", "examples/sample_inventory.csv",
+               "--sizes", "100", "1000"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "icsmatch: custom args (prompts)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "icsmatch.cli",
+      "args": ["--db", "${workspaceFolder}/local.db", "${input:command}"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    },
+    {
+      "name": "pytest: current file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["${file}", "-v"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "command",
+      "type": "promptString",
+      "description": "icsmatch subcommand and flags",
+      "default": "stats"
+    }
+  ]
+}

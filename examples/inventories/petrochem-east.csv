@@ -1,0 +1,4 @@
+asset_id,vendor,product,version,model,purdue_level,site
+PLC-100,Rockwell Automation,ControlLogix 5580,32.011,,1,Plant-B
+PLC-101,Allen-Bradley,MicroLogix 1400,21.003,,1,Plant-B
+DCS-300,Schneider Electric,Modicon M580,3.20,,1,Plant-C
